@@ -26,6 +26,7 @@ public class RestauranteServiceImpl implements RestauranteServiceInterface{
 
     @Override
     public Restaurante updateRestaurat(Restaurante restaurante) {
+        System.out.println("entro a update");
         Restaurante restaurantDB = getRestaurant(restaurante.getId_Restaurante());
         if (null == restaurantDB){
             return null;
